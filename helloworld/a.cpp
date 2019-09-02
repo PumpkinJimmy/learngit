@@ -6,6 +6,13 @@ int main()
 	int a;
 	cout << "Enter a number:" << endl;
 	cin >> a;
-	cout << "You've entered:" << a << end;
+	if (cin)
+	{
+		cout << "You've entered:" << a << endl;
+	}
+	else
+	{
+		cout << "Bad input." << endl;
+	}
 	return 0;
 }
