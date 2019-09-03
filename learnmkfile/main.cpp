@@ -1,5 +1,5 @@
 #include <iostream>
-#include <prime>
+#include "primetest.hpp"
 using namespace std;
 
 int main()
@@ -12,7 +12,7 @@ int main()
 		cin >> n;
 		if (cin)
 		{
-			cout << pt.test(n) ? "true" : "false" << endl;
+			cout << (pt.test(n) ? "true" : "false") << endl;
 		}
 		else
 		{

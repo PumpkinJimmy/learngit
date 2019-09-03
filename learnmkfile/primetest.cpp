@@ -1,4 +1,4 @@
-#include <primetest.hpp>
+#include "primetest.hpp"
 
 bool PrimeTest::test(int n)
 {
