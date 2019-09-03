@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
 	PrimeTest pt;
+	pt.print_prime(50);
 	while (1)
 	{
 		int n;
