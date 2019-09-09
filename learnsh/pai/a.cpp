@@ -1,5 +1,4 @@
 #include <iostream>
-#include <algorithm>
 using namespace std;
 int a[100000];
 int main()
@@ -9,7 +8,15 @@ int main()
 	{
 		cin >> a[i];
 	}
-	sort(a + 1, a + n + 1);
+	for (int i = 2; i <= n; i++)
+	{
+		int k = a[i], j;
+		for (j = i - 1; j >= 1 && a[j] > k; j--)
+		{
+			a[j + 1] = a[j];
+		}
+		a[j + 1] = k;
+	}
 	for (int i = 1; i <= n; i++)
 	{
 		cout << a[i] << endl;
